@@ -1,0 +1,16 @@
+/*
+tablet durumuna gecerken kullanildigi yerde ici doldurulacaktir
+*/
+@mixin tablet{
+    @media screen and (max-width:768px) {//tablet ile cagirilir
+        @content;//boyutlandirmaya gerek yoktur
+    }
+}
+
+//telefonlara göre boyutlandirmada tabaka icerigi kullanildigi
+//yerde yazilacaktir
+@mixin mobile{
+    @media screen and (max-width:540px) {
+        @content;
+    }
+}
